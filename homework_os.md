@@ -922,7 +922,6 @@
 
 
 
-
 [1]:https://github.com/ir193/tiny_linux/blob/master/myconfig2
 [2]:http://www.cnblogs.com/kulin/archive/2013/01/04/linux-core.html
 [3]:http://www.wowotech.net/linux_kenrel/11.html
