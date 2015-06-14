@@ -1,8 +1,8 @@
 #Linux4.0.4 配置文件解析
 ###P14206024 曹立
  * [1.配置解析](#1)
- * [2.linux中断机制](#2)
- * [3.linux RCU机制](#3)
+ * [2.linux中设备驱动](#2)
+ * [3.linux I/O设备](#3)
  * [4.实验中遇到的问题及解决办法](#5)
  
 这篇文档介绍的是编译[Linux4.0.4][6]源码时的部分配置文件的说明文档,参考的配置文件[myconfig2][1]的513-791行，该配置条件下可保证完成内核的上网功能。主要包含编译的基本配置，Network testing（网络测试），Device Drivers(设备驱动)，Bus devices(总线设备)，Misc devices（杂项设备），EEPROM support（传感器的支持）和SCSI device support（SCSI设备支持），Input device support（输入设备的支持），Input Device Drivers（输入设备的驱动等等）。涉及的核心是设备的支持，硬件驱动等的支持。
@@ -11,7 +11,7 @@
 <h1 id="1">配置解析</h1>
 
 
-##6-41行中比较重要的配置
+
 ##Network testing
     # CONFIG_NET_PKTGEN is not set  
     #PKTGEN没有设置，NKTGEN是一种发包工具
@@ -41,7 +41,7 @@
     # CONFIG_NFC is not set
     #NFC模块
 
-##43-71Devices driver分析
+##Devices driver分析
 ##Device Drivers
     
      # Generic Driver Options
