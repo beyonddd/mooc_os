@@ -54,20 +54,27 @@
      # CONFIG_STANDALONE is not set
       #独立进程模式运行
      # CONFIG_PREVENT_FIRMWARE_BUILD is not set
-      #防止固件被建立，固件一般随着驱动被装载。如果需要更新固件，需要重新编译
+      #防止固件被建立，固件一般随着驱动被装载。如果需要更新固件，
+      #需要重新编译
      # CONFIG_FW_LOADER is not set
       #固件加载支持。
      # CONFIG_ALLOW_DEV_COREDUMP is not set
        #允许设备产生core dump动作，什么是coredump动作？
-       #我们在开发（或使用）一个程序时，最怕的就是程序莫明其妙地当掉。
-       #虽然系统没事，但我们下次仍可能遇到相同的问题。于是这时操作系统就会把程序当掉 时的内存内容 dump 出来（现在通常是写在一个叫 core 的 file 里面），让 我们或是 debugger 做为参考。这个动作就叫作 core dump。
+       #我们在开发（或使用）一个程序时，最怕的就是程序莫明其妙地#
+       #当掉。
+       #虽然系统没事，但我们下次仍可能遇到相同的问题。于是这时操
+       #作系统就会把程序当掉 时的内存内容 dump 出来（现在通常是
+       #写在一个叫 core 的 file 里面），让 我们或是 debugger 
+       #做为参考。这个动作就叫作 core dump。
      # CONFIG_DEBUG_DRIVER is not set
-      #如果你想驱动核心产生一系列的调试信息到日志文件中，请选择它。对驱动核心比较感冒，想知道更多关于它的发生情况。
+      #如果你想驱动核心产生一系列的调试信息到日志文件中，请选择
+      #它。对驱动核心比较感冒，想知道更多关于它的发生情况。
      # CONFIG_DEBUG_DEVRES is not set
       #管理设备资源，产生详细的调试信息，如果不确定，请选择N
 
      # CONFIG_SYS_HYPERVISOR is not set
-      #该目录是与虚拟化Xen相关的装置。(Xen是一个开放源代码的虚拟机监视器)
+      #该目录是与虚拟化Xen相关的装置。(Xen是一个开放源代码的虚拟
+      #机监视器)
      # CONFIG_GENERIC_CPU_DEVICES is not set
      CONFIG_GENERIC_CPU_AUTOPROBE=y
 
@@ -260,250 +267,445 @@
      # CONFIG_NET_DSA_MV88E6XXX is not set
       #
      # CONFIG_NET_DSA_MV88E6060 is not set
-      #This enables support for the Marvell 88E6060 ethernet switch chip.
+      #This enables support for the Marvell 88E6060 
+      #ethernet switch chip.
 
      # CONFIG_NET_DSA_MV88E6XXX_NEED_PPU is not set
-      #
  
      # CONFIG_NET_DSA_MV88E6131 is not set
-      #This enables support for the Marvell 88E6085/6095/6095F/6131 ethernet switch chips.
+      #This enables support for the Marvell 
+      #88E6085/6095/6095F/6131 ethernet switch chips.
 
      # CONFIG_NET_DSA_MV88E6123_61_65 is not set
-      #This enables support for the Marvell 88E6123/6161/6165 ethernet switch chips.
+      #This enables support for the Marvell 
+      #88E6123/6161/6165 ethernet switch chips.
  
      # CONFIG_NET_DSA_MV88E6171 is not set
-      #This enables support for the Marvell 88E6171 ethernet switch chip.
+      #This enables support for the Marvell 88E6171 
+      #ethernet switch chip.
 
      # CONFIG_NET_DSA_MV88E6352 is not set
-      #This enables support for the Marvell 88E6176 and 88E6352 ethernet switch chips.
+      #This enables support for the Marvell 88E6176 and 
+      #88E6352 ethernet switch chips.
 
      # CONFIG_NET_DSA_BCM_SF2 is not set
-      #This enables support for the Broadcom Starfighter 2 Ethernet switch chips.
+      #This enables support for the Broadcom Starfighter 2 
+      #Ethernet switch chips.
 
      CONFIG_ETHERNET=y
       #以太网
      # CONFIG_NET_VENDOR_3COM is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_ADAPTEC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
  
      # CONFIG_NET_VENDOR_AGERE is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_ALTEON is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_ALTERA_TSE is not set
-      #This driver supports the Altera Triple-Speed (TSE) Ethernet MAC.
+      #This driver supports the Altera Triple-Speed (TSE) 
+      #Ethernet MAC.
 
      # CONFIG_NET_VENDOR_AMD is not set
-      #If you have a network (Ethernet) chipset belonging to this class, say Y.
+      #If you have a network (Ethernet) chipset belonging 
+      #to this class, say Y.
 
      # CONFIG_NET_XGENE is not set
-      #This is the Ethernet driver for the on-chip ethernet interface on the APM X-Gene SoC.
+      #This is the Ethernet driver for the on-chip 、
+      #ethernet interface on the APM X-Gene SoC.
 
      # CONFIG_NET_VENDOR_ARC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO,  
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_ATHEROS is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_BROADCOM is not set
-      #If you have a network (Ethernet) chipset belonging to this class, say Y.
+      #If you have a network (Ethernet) chipset belonging 
+      #to this class, say Y.
 
      # CONFIG_NET_VENDOR_BROCADE is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_CHELSIO is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_CISCO is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_CX_ECAT is not set
-      #Driver for EtherCAT master module located on CCAT FPGA that can be found on Beckhoff CX5020, and possibly other of CX Beckhoff CX series industrial PCs.
+      #Driver for EtherCAT master module located on CCAT 
+      #FPGA that can be found on Beckhoff CX5020, and 
+      #possibly other of CX Beckhoff CX series industrial 
+      #PCs.
 
      # CONFIG_DNET is not set
-      #the Dave ethernet interface (DNET) is found on Qong Board FPGA. Say Y to include support for the DNET chip.
+      #the Dave ethernet interface (DNET) is found on Qong 
+      #Board FPGA. Say Y to include support for the DNET 
+      #chip.
 
      # CONFIG_NET_VENDOR_DEC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_DLINK is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_EMULEX is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html      
+      #howto.
 
      # CONFIG_NET_VENDOR_EXAR is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_HP is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
     CONFIG_NET_VENDOR_INTEL=y
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_E100 is not set
-      #This driver supports Intel(R) PRO/100 family of adapters
+      #This driver supports Intel(R) PRO/100 family of 
+      #adapters
 
     CONFIG_E1000=y
-      #This driver supports Intel(R) PRO/1000 gigabit ethernet family of adapters.
+      #This driver supports Intel(R) PRO/1000 gigabit 
+      #ethernet family of adapters.
     CONFIG_E1000E=y
-      #This driver supports the PCI-Express Intel(R) PRO/1000 gigabit ethernet family of adapters. For PCI or PCI-X e1000 adapters, use the regular e1000 driver For more information on how to identify your adapter, go to the Adapter & Driver ID Guide at:
+      #This driver supports the PCI-Express Intel(R) 
+      #PRO/1000 gigabit ethernet family of adapters. For 
+      #PCI or PCI-X e1000 adapters, use the regular e1000 
+      #driver For more information on how to identify your 
+      #adapter, go to the Adapter & Driver ID Guide at:
       #http://support.intel.com/support/network/adapter/pro100/21397.htm
 
      # CONFIG_IGB is not set
       #同上
 
      # CONFIG_IGBVF is not set
-      #This driver supports Intel(R) 82576 virtual functions. For more information on how to identify your adapter, go to the Adapter & Driver ID Guide at:
-      #http://support.intel.com/support/network/adapter/pro100/21397.htm
-      #For general information and support, go to the Intel support website at:
+      #This driver supports Intel(R) 82576 virtual 
+      #functions. For more information on how to identify 
+      #your adapter, go to the Adapter & Driver ID Guide 
+      #at:
+      #http://support.intel.com/support/network/adapter/
+      #pro100/21397.htm
+      #For general information and support, go to the 
+      #Intel support website at:
       #http://support.intel.com
-      #More specific information on configuring the driver is in Documentation/networking/e1000.txt.
+      #More specific information on configuring the driver 
+      #is in Documentation/networking/e1000.txt.
  
 
      # CONFIG_IXGB is not set
-      #This driver supports Intel(R) PRO/10GbE family of adapters for PCI-X type cards. For PCI-E type cards, use the "ixgbe" driver instead. For more information on how to identify your adapter, go to the Adapter & Driver ID Guide at:
-      #http://support.intel.com/support/network/adapter/pro100/21397.htm
-      #For general information and support, go to the Intel support website at:
+      #This driver supports Intel(R) PRO/10GbE family of 
+      #adapters for PCI-X type cards. For PCI-E type 
+      #cards, use the "ixgbe" driver instead. For more 
+      #information on how to identify your adapter, go to 
+      #the Adapter & Driver ID Guide at:
+      #http://support.intel.com/support/network/adapter/
+      #pro100/21397.htm
+      #For general information and support, go to the 
+      #Intel support website at:
       #http://support.intel.com
-      #More specific information on configuring the driver is in Documentation/networking/ixgb.txt.
+      #More specific information on configuring the driver 
+      #is in Documentation/networking/ixgb.txt.
  
  
 
      # CONFIG_IXGBE is not set
-      #This driver supports Intel(R) 10GbE PCI Express family of adapters. For more information on how to identify your adapter, go to the Adapter & Driver ID Guide at:
-      #http://support.intel.com/support/network/adapter/pro100/21397.htm
-      #For general information and support, go to the Intel support website at:
+      #This driver supports Intel(R) 10GbE PCI Express 
+      #family of adapters. For more information on how to 
+      #identify your adapter, go to the Adapter & Driver 
+      #ID Guide at:
+      #http://support.intel.com/support/network/adapter/
+      #pro100/21397.htm
+      #For general information and support, go to the 
+      #Intel support website at:
       #http://support.intel.com
 
      # CONFIG_I40E is not set
-      #This driver supports Intel(R) Ethernet Controller XL710 Family of devices. For more information on how to identify your adapter, go to the Adapter & Driver ID Guide at:
-      #http://support.intel.com/support/network/adapter/pro100/21397.htm
-      #For general information and support, go to the Intel support website at:
+      #This driver supports Intel(R) Ethernet Controller 
+      #XL710 Family of devices. For more information on 
+      #how to identify your adapter, go to the Adapter & 
+      #Driver ID Guide at:
+      #http://support.intel.com/support/network/adapter/
+      #pro100/21397.htm
+      #For general information and support, go to the 
+      #Intel support website at:
       #http://support.intel.com
 
      # CONFIG_NET_VENDOR_I825XX is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
-      #Note that the answer to this question does not directly affect the kernel: saying N will just cause the configurator to skip all the questions about these devices. If you say Y, you will be asked for your specific card in the following questions.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     #howto.
+      #Note that the answer to this question does not 
+      #directly affect the kernel: saying N will just 
+      #cause the configurator to skip all the questions 
+      #about these devices. If you say Y, you will be 
+      #asked for your specific card in the following 
+      #questions.
 
      # CONFIG_IP1000 is not set
       #This driver supports IP1000 gigabit Ethernet cards.
 
      # CONFIG_JME is not set
-      #This driver supports the PCI-Express gigabit ethernet adapters based on JMicron JMC250 chipset.
+      #This driver supports the PCI-Express gigabit 
+      #ethernet adapters based on JMicron JMC250 chipset.
 
      # CONFIG_NET_VENDOR_MARVELL is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_MELLANOX is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_MICREL is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_MYRI is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
  
      # CONFIG_FEALNX is not set
-      #Say Y here to support the Myson MTD-800 family of PCI-based Ethernet cards. http://www.myson.com.tw/
+      #Say Y here to support the Myson MTD-800 family of 
+      #PCI-based Ethernet cards. http://www.myson.com.tw/
 
      # CONFIG_NET_VENDOR_NATSEMI is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_NVIDIA is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_OKI is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_ETHOC is not set
-      #Say Y here if you want to use the OpenCores 10/100 Mbps Ethernet MAC.
+      #Say Y here if you want to use the OpenCores 10/100 
+      #Mbps Ethernet MAC.
  
      # CONFIG_NET_PACKET_ENGINE is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_QLOGIC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_QUALCOMM is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_REALTEK is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_RDC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_ROCKER is not set
-      #If you have a network device belonging to this class, say Y.
+      #If you have a network device belonging to this 
+      #class, say Y.
 
      # CONFIG_NET_VENDOR_SAMSUNG is not set
-      #If you have a network (Ethernet) chipset belonging to this class, say Y.
+      #If you have a network (Ethernet) chipset belonging 
+      #to this class, say Y.
 
      # CONFIG_NET_VENDOR_SEEQ is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_SILAN is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_SIS is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_SFC is not set
-      #This driver supports 10-gigabit Ethernet cards based on the Solarflare SFC4000 and SFC9000-family controllers.
+      #This driver supports 10-gigabit Ethernet cards 
+      #based on the Solarflare SFC4000 and SFC9000-family 
+      #controllers.
 
      # CONFIG_NET_VENDOR_SMSC is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_STMICRO is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto. 
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto. 
  
      # CONFIG_NET_VENDOR_SUN is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_TEHUTI is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_TI is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_VIA is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_NET_VENDOR_WIZNET is not set
-      #If you have a network (Ethernet) card belonging to this class, say Y and read the Ethernet-HOWTO, available from http://www.tldp.org/docs.html     #howto.
+      #If you have a network (Ethernet) card belonging to 
+      #this class, say Y and read the Ethernet-HOWTO, 
+      #available from http://www.tldp.org/docs.html     
+      #howto.
 
      # CONFIG_FDDI is not set
-      #Fiber Distributed Data Interface is a high speed local area network design; essentially a replacement for high speed Ethernet. FDDI can run over copper or fiber. If you are connected to such a network and want a driver for the FDDI card in your computer, say Y here (and then also Y to the driver for your FDDI card, below). Most people will say N.
+      #Fiber Distributed Data Interface is a high speed 
+      #local area network design; essentially a 
+      #replacement for high speed Ethernet. FDDI can run 
+      #over copper or fiber. If you are connected to such 
+      #a network and want a driver for the FDDI card in 
+      #your computer, say Y here (and then also Y to the 
+      #driver for your FDDI card, below). Most people will 
+      #say N.
  
      # CONFIG_HIPPI is not set
-      #
+      
 
      # CONFIG_PHYLIB is not set
-      #Ethernet controllers are usually attached to PHY devices. This option provides infrastructure for managing PHY devices.
+      #Ethernet controllers are usually attached to PHY 
+      #devices. This option provides infrastructure for 
+      #managing PHY devices.
  
      # CONFIG_PPP is not set
-      #PPP (Point to Point Protocol) is a newer and better SLIP. It serves the same purpose: sending Internet traffic over telephone (and other serial) lines. Ask your access provider if they support it, because otherwise you can't use it; most Internet access providers these days support PPP rather than SLIP.
+      #PPP (Point to Point Protocol) is a newer and better 
+      #SLIP. It serves the same purpose: sending Internet 
+      #traffic over telephone (and other serial) lines. 
+      #Ask your access provider if they support it, 
+      #because otherwise you can't use it; most Internet 
+      #access providers these days support PPP rather than 
+      #SLIP.
 
      # CONFIG_SLIP is not set
-      #
-     #
-     # Host-side USB support is needed for USB Network Adapter support
-     # 主机端(Host-side)USB支持.通用串行总线(USB)是一个串行总线子系统规范,它比传统的串口速度更快并且特性更丰富(供电,热插拔,最多可接127个设备等),有望在将来一统PC外设接口.USB的"Host"(主机)被称为"根"(也可以理解为是主板上的USB控制器),外部设备被称为"叶子",而内部的节点则称为"hub"(集线器).基本上只要你想使用任何USB设备都必须选中此项.另外,你还需要从下面选中至少一个"Host Controller Driver"(HCD),比如适用于USB1.1的"UHCI HCD support"或"OHCI HCD support",适用于USB2.0的"EHCI HCD (USB 2.0) support".如果你拿不准的话把他们全部选中一般也不会出问题.如果你的系统有设备端的USB接口(也就是你的系统可以作为"叶子"使用),请到"USB Gadget"中进行选择.
+      
+     
+     # Host-side USB support is needed for USB Network 
+     #Adapter support
+     #主机端(Host-side)USB支持.通用串行总线(USB)是一个串行总线
+     #子系统规范,它比传统的串口速度更快并且特性更丰富(供电,热插
+     #拔,最多可接127个设备等),有望在将来一统PC外设接口.USB
+     #的"Host"(主机)被称为"根"(也可以理解为是主板上的USB控制
+     #器),外部设备被称为"叶子",而内部的节点则称为"hub"(集线器).
+     #基本上只要你想使用任何USB设备都必须选中此项.另外,你还需要从
+     #下面选中至少一个"Host Controller Driver"(HCD),比如适用
+     #于USB1.1的"UHCI HCD support"或"OHCI HCD support",适用
+     #于USB2.0的"EHCI HCD (USB 2.0) support".如果你拿不准的话
+     #把他们全部选中一般也不会出问题.如果你的系统有设备端的USB接
+     #口(也就是你的系统可以作为"叶子"使用),请到"USB Gadget"中进
+     #行选择.
      # CONFIG_WLAN is not set
       #wlan上网配置
 
-     #
-     # Enable WiMAX (Networking options) to see the WiMAX drivers
+     # Enable WiMAX (Networking options) to see the WiMAX #drivers
      #
      # CONFIG_WAN is not set
       #wan接口
      # CONFIG_VMXNET3 is not set
-      #This driver supports VMware's vmxnet3 virtual ethernet NIC.
+      #This driver supports VMware's vmxnet3 virtual 
+      #ethernet NIC.
 
       # CONFIG_ISDN is not set
    
@@ -513,7 +715,10 @@
      # CONFIG_INPUT_FF_MEMLESS is not set
       #游戏玩家使用的力反馈设备
      # CONFIG_INPUT_POLLDEV is not set
-      #Say Y here if you are using a driver for an input device that periodically polls hardware state. This option is only useful for out-of-tree drivers since in-tree drivers select it automatically.
+      #Say Y here if you are using a driver for an input 
+      #device that periodically polls hardware state. This 
+      #option is only useful for out-of-tree drivers since 
+      #in-tree drivers select it automatically.
 
      # CONFIG_INPUT_SPARSEKMAP is not set
      # CONFIG_INPUT_MATRIXKMAP is not set
@@ -555,7 +760,10 @@
      # CONFIG_INPUT_TOUCHSCREEN is not set
       #触屏驱动
      # CONFIG_INPUT_MISC is not set
-      #Say Y here, and a list of miscellaneous input drivers will be displayed. Everything that didn't fit into the other categories is here. This option doesn't affect the kernel.
+      #Say Y here, and a list of miscellaneous input 
+      #drivers will be displayed. Everything that didn't 
+      #fit into the other categories is here. This option 
+      #doesn't affect the kernel.
 
      #
      # Hardware I/O ports
@@ -564,34 +772,53 @@
     CONFIG_SERIO=y
       #使用PS/2键盘或鼠标的
     CONFIG_ARCH_MIGHT_HAVE_PC_SERIO=y
-      #Select this config option from the architecture Kconfig if the architecture might use a PC serio device (i8042) to communicate with keyboard, mouse, etc.
+      #Select this config option from the architecture 
+      #Kconfig if the architecture might use a PC serio 
+      #device (i8042) to communicate with keyboard, mouse, 
+      #etc.
  
     CONFIG_SERIO_I8042=y
-      #i8042 is the chip over which the standard AT keyboard and PS/2 mouse are connected to the computer. If you use these devices, you'll need to say Y here.
+      #i8042 is the chip over which the standard AT 
+      #keyboard and PS/2 mouse are connected to the 
+      #computer. If you use these devices, you'll need to 
+      #say Y here.
 
     CONFIG_SERIO_SERPORT=y
-      #Say Y here if you plan to use an input device (mouse, joystick, tablet, 6dof) that communicates over the RS232 serial (COM) port.
+      #Say Y here if you plan to use an input device 
+      #(mouse, joystick, tablet, 6dof) that communicates 
+      #over the RS232 serial (COM) port.
 
      # CONFIG_SERIO_CT82C710 is not set
-      #Say Y here if you have a Texas Instruments TravelMate notebook equipped with the ct82c710 chip and want to use a mouse connected to the "QuickPort".
+      #Say Y here if you have a Texas Instruments 
+      #TravelMate notebook equipped with the ct82c710 chip 
+      #and want to use a mouse connected to the 
+      #"QuickPort".
 
      # CONFIG_SERIO_PCIPS2 is not set
-      #ay Y here if you have a Mobility Docking station with PS/2 keyboard and mice ports.
+      #ay Y here if you have a Mobility Docking station 
+      #with PS/2 keyboard and mice ports.
 
     CONFIG_SERIO_LIBPS2=y
-      #Say Y here if you want to have raw access to serio ports, such as AUX ports on i8042 keyboard controller.
+      #Say Y here if you want to have raw access to serio 
+      #ports, such as AUX ports on i8042 keyboard 
+      #controller.
 
      # CONFIG_SERIO_RAW is not set
-      #Say Y here if you want to have raw access to serio ports, such as AUX ports on i8042 keyboard controller.
+      #Say Y here if you want to have raw access to serio 
+      #ports, such as AUX ports on i8042 keyboard 
+      #controller.
 
      # CONFIG_SERIO_ALTERA_PS2 is not set
-      #Say Y here if you have Altera University Program PS/2 ports.
+      #Say Y here if you have Altera University Program 
+      #PS/2 ports.
 
      # CONFIG_SERIO_PS2MULT is not set
-      #Say Y here if you have the PS/2 line multiplexer like the one present on TQC boards.
+      #Say Y here if you have the PS/2 line multiplexer 
+      #like the one present on TQC boards.
  
      # CONFIG_SERIO_ARC_PS2 is not set
-      #Say Y here if you have an ARC FPGA platform with a PS/2 controller in it.
+      #Say Y here if you have an ARC FPGA platform with a 
+      #PS/2 controller in it.
 
      # CONFIG_GAMEPORT is not set
       #就是早年"小霸王"游戏机上的那种手柄
@@ -604,38 +831,68 @@
     CONFIG_VT=y
       #虚拟终端，
     CONFIG_CONSOLE_TRANSLATIONS=y
-      #内核将一个虚拟终端用作系统控制台(将诸如模块错误/内核错误/启动信息之类的警告信息发送到这里,通常是第一个虚拟终端).除非是嵌入式系统,否则必选
+      #内核将一个虚拟终端用作系统控制台(将诸如模块错误/内核错误/
+      #启动信息之类的警告信息发送到这里,通常是第一个虚拟终端).除
+      #非是嵌入式系统,否则必选
     CONFIG_VT_CONSOLE=y
       #
  
     CONFIG_HW_CONSOLE=y
-      #If you do say Y here, by default the currently visible virtual terminal (/dev/tty0) will be used as system console. You can change that with a kernel command line option such as "console=tty3" which would use the third virtual terminal as system console.
+      #If you do say Y here, by default the currently 
+      #visible virtual terminal (/dev/tty0) will be used 
+      #as system console. You can change that with a 
+      #kernel command line option such as "console=tty3" 
+      #which would use the third virtual terminal as 
+      #system console.
      # CONFIG_VT_HW_CONSOLE_BINDING is not set
-      # If more than 1 console driver is enabled, setting this to 'y' will allow you to select the console driver that will serve as the backend for the virtual terminals.
+      # If more than 1 console driver is enabled, setting 
+      #this to 'y' will allow you to select the console 
+      #driver that will serve as the backend for the 
+      #virtual terminals.
 
      # CONFIG_UNIX98_PTYS is not set
-      #伪终端(PTY)可以模拟一个终端,它由slave(等价于一个物理终端)和master(被一个诸如xterms之类的进程用来读写slave设备)两部分组成的软设备.使用telnet或ssh远程登录者必选
+      #伪终端(PTY)可以模拟一个终端,它由slave(等价于一个物理终端)
+      #和master(被一个诸如xterms之类的进程用来读写slave设备)两
+      #部分组成的软设备.使用telnet或ssh远程登录者必选
      # CONFIG_LEGACY_PTYS is not set
-      #A pseudo terminal (PTY) is a software device consisting of two halves: a master and a slave. The slave device behaves identical to a physical terminal; the master device is used by a process to read data from and write data to the slave, thereby emulating a terminal. Typical programs for the master side are telnet servers and xterms.
+      #A pseudo terminal (PTY) is a software device 
+      #consisting of two halves: a master and a slave. The 
+      #slave device behaves identical to a physical 
+      #terminal; the master device is used by a process to 
+      #read data from and write data to the slave, thereby 
+      #emulating a terminal. Typical programs for the 
+      #master side are telnet servers and xterms.
 
      # CONFIG_SERIAL_NONSTANDARD is not set
-      #Say Y here if you have any non-standard serial boards
+      #Say Y here if you have any non-standard serial 
+      #boards
  
      # CONFIG_NOZOMI is not set
-      #If you have a HSDPA driver Broadband Wireless Data Card - Globe Trotter PCMCIA card, say Y here.
+      #If you have a HSDPA driver Broadband Wireless Data 
+      #Card - Globe Trotter PCMCIA card, say Y here.
  
      # CONFIG_N_GSM is not set
-      #This line discipline provides support for the GSM MUX protocol and presents the mux as a set of 61 individual tty devices.
+      #This line discipline provides support for the GSM 
+      #MUX protocol and presents the mux as a set of 61 
+      #individual tty devices.
 
      # CONFIG_TRACE_SINK is not set
-      #This is to provide a way to extract modem trace data on devices that do not have a PTI HW module, or just need modem trace data to come out of a different HW output port. 
+      #This is to provide a way to extract modem trace 
+      #data on devices that do not have a PTI HW module, 
+      #or just need modem trace data to come out of a 
+      #different HW output port. 
 
      # CONFIG_DEVMEM is not set
-      #Say Y here if you want to support the /dev/mem device. The /dev/mem device is used to access areas of physical memory. When in doubt, say "Y".
+      #Say Y here if you want to support the /dev/mem 
+      #device. The /dev/mem device is used to access areas 
+      #of physical memory. When in doubt, say "Y".
  
      # CONFIG_DEVKMEM is not set
-      #Say Y here if you want to support the /dev/kmem device
-      #The /dev/kmem device is rarely used, but can be used for certain kind of kernel debugging operations.
+      #Say Y here if you want to support the /dev/kmem 
+      #device
+      #The /dev/kmem device is rarely used, but can be 
+      #used for certain kind of kernel debugging 
+      #operations.
 
 
 
